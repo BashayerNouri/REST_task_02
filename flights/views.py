@@ -29,7 +29,6 @@ class UpdateView(RetrieveUpdateAPIView):
 
 class DeleteView(DestroyAPIView):
     queryset = Booking.objects.all()
-    serializer_class = BookingSerializer
     lookup_field = 'id'
     lookup_url_kwarg = 'delete_id'
 
